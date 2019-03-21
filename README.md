@@ -1,3 +1,7 @@
+docker exec -it docker-splunk /bin/bash -c "/opt/splunk/etc/apps/install.sh"
+
+docker exec -it docker-universalforwarder /bin/bash -c "/opt/splunkforwarder/etc/apps/install.sh"
+
 docker-compose config
 
 wget https://www.dropbox.com/s/v0gbyigaqxlq1de/splunk-stream_712.tgz -O ~/docker-splunk-hec-stream/splunk/splunk-stream_712.tgz
